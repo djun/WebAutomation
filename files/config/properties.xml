@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="BrowserName">chrome</entry> <!--要测试的浏览器名称如：firefox,internet explorer,chrome-->
+	<entry key="DriverMode">local</entry> <!-- webdriver是本地还是远程模式，local/remote -->
+	<entry key="RemoteAddress">192.168.137.142</entry> <!-- webdriver为remote时生效，需要启动driver宿主机的地址 -->
+	<entry key="ChromeDriverDirectory">./files/tool/driver/chromeDriver.exe</entry> <!--谷歌浏览器Driver路径-->
+	<entry key="IEDriverDirectory">./files/tool/driver/IEDriverServer.exe</entry> <!--IE浏览器driver路径 -->
+	<entry key="FirefoxDriverDirectory">C:\Users\murphy\AppData\Local\Mozilla Firefox\firefox.exe</entry> <!--Firefox浏览器driver路径-->
+	<entry key="BaseDomain">https://www.juhe.cn/</entry> <!--web默认url地址-->
+	<!-- 以下属于运行时设置 -->
+	<entry key="ImplicitlyWaitInSeconds">10</entry> <!--搜索页面元素超时设置,默认10秒 -->
+	<entry key="ScriptTimeoutInSeconds">20</entry> <!--等待javascripts 脚本执行完毕超时时间设置,默认20秒 -->
+	<entry key="PageLoadTimeoutInSeconds">20</entry> <!--等待页面完全加载超时时间设置,默认20秒 -->
+	<entry key="DefaultTimeOutInSeconds">20</entry> <!--自定义超时时间设置,默认20秒 -->
+	<entry key="SleepInSeconds">10</entry> <!--睡眠时间设置,默认10秒 -->
+	<!-- 以下属于TestNG运行时设置 -->
+	<entry key="FailedRetrycount">0</entry> <!--TestNG失败尝试次数,默认2次,加上本来运行的一次,总计运行3次,目前只能最多运行3次,超过3次以后的用例会有问题-->
+	<entry key="SourceCodeDir">src</entry> <!--TestNG失败尝试代码路径,默认src -->
+	<entry key="SourceCodeEncoding">UTF-8</entry> <!--TestNG失败尝试次数代码编码方式,默认UTF-8 -->
+	
+	<!-- 测试数据 -->
+	<entry key="Username">unmurphy</entry>
+	<entry key="Password">yzx520yzx</entry>
+	<entry key="PhoneNo">15962199447</entry>
+	<entry key="Email">yzx520yzx@126.com</entry>
+</properties>

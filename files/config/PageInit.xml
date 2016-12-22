@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JuhePageInit">
+	<test verbose="2" name="JuhePageInit" preserve-order="true">
+		<classes>
+			<class name="cn.juhe.webautomation.pagetest.HomePageTest">
+				<methods>
+					<include name="storeHomePage" />
+				</methods>
+			</class>
+			<class name="cn.juhe.webautomation.pagetest.APIDocPageTest">
+				<methods>
+					<include name="storeAPIDocPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<listeners>
+		<listener class-name="cn.juhe.webautomation.report.TestNGRetryListener" />
+		<listener class-name="cn.juhe.webautomation.report.ReportNGHTMLReporter" />
+	</listeners>
+</suite> 
