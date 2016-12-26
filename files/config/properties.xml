@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-	<entry key="BrowserName">chrome</entry> <!--要测试的浏览器名称如：firefox,internet explorer,chrome-->
+	<entry key="BrowserName">chrome</entry> <!--要测试的浏览器名称如：firefox,ie,chrome-->
 	<entry key="DriverMode">local</entry> <!-- webdriver是本地还是远程模式，local/remote -->
-	<entry key="RemoteAddress">192.168.137.142</entry> <!-- webdriver为remote时生效，需要启动driver宿主机的地址 -->
+	<entry key="RemoteAddress">127.0.0.1</entry> <!-- webdriver为remote时生效，需要启动driver宿主机的地址 -->
 	<entry key="ChromeDriverDirectory">./files/tool/driver/chromeDriver.exe</entry> <!--谷歌浏览器Driver路径-->
 	<entry key="IEDriverDirectory">./files/tool/driver/IEDriverServer.exe</entry> <!--IE浏览器driver路径 -->
-	<entry key="FirefoxDriverDirectory">C:\Users\murphy\AppData\Local\Mozilla Firefox\firefox.exe</entry> <!--Firefox浏览器driver路径-->
+	<entry key="FirefoxDriverDirectory">./files/tool/driver/geckodriver.exe</entry> <!--Firefox浏览器driver路径-->
 	<entry key="BaseDomain">https://www.juhe.cn/</entry> <!--web默认url地址-->
 	<!-- 以下属于运行时设置 -->
 	<entry key="ImplicitlyWaitInSeconds">10</entry> <!--搜索页面元素超时设置,默认10秒 -->

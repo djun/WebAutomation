@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[进入主页成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[进入登录界面成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[登录成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[进入个人中心成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[Original Password -->yzx520yzx
+New Password -->2c4a0bgq]]>
+    </line>
+    <line>
+      <![CDATA[进入主页成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[进入主页成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[进入登录界面成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[登录成功，尝试次数 -->1]]>
+    </line>
+    <line>
+      <![CDATA[进入个人中心成功，尝试次数 -->1]]>
+    </line>
+  </reporter-output>
+  <suite name="SmokeSuite" duration-ms="18342" started-at="2016-12-23T06:07:29Z" finished-at="2016-12-23T06:07:47Z">
+    <groups>
+    </groups>
+    <test name="Smoketest" duration-ms="18342" started-at="2016-12-23T06:07:29Z" finished-at="2016-12-23T06:07:47Z">
+      <class name="cn.juhe.webautomation.testcase.PersonalCenterPageTestCase">
+        <test-method status="PASS" signature="beforeTest(java.lang.reflect.Method)[pri:0, instance:cn.juhe.webautomation.testcase.PersonalCenterPageTestCase@b59d31]" name="beforeTest" is-config="true" duration-ms="6439" started-at="2016-12-23T14:07:29Z" finished-at="2016-12-23T14:07:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cn.juhe.webautomation.testcase.PersonalCenterPageTestCase.testModityPwd()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testModityPwd()[pri:0, instance:cn.juhe.webautomation.testcase.PersonalCenterPageTestCase@b59d31]" name="testModityPwd" duration-ms="11591" started-at="2016-12-23T14:07:36Z" finished-at="2016-12-23T14:07:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[进入主页成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[进入登录界面成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[登录成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[进入个人中心成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[Original Password -->yzx520yzx
+New Password -->2c4a0bgq]]>
+            </line>
+            <line>
+              <![CDATA[进入主页成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[进入主页成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[进入登录界面成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[登录成功，尝试次数 -->1]]>
+            </line>
+            <line>
+              <![CDATA[进入个人中心成功，尝试次数 -->1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testModityPwd -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:cn.juhe.webautomation.testcase.PersonalCenterPageTestCase@b59d31]" name="afterTest" is-config="true" duration-ms="289" started-at="2016-12-23T14:07:47Z" finished-at="2016-12-23T14:07:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- cn.juhe.webautomation.testcase.PersonalCenterPageTestCase -->
+    </test> <!-- Smoketest -->
+  </suite> <!-- SmokeSuite -->
+</testng-results>

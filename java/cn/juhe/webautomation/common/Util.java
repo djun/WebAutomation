@@ -15,6 +15,7 @@ import javax.imageio.ImageIO;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+
 /**
  * 运行时参数设置
  * 

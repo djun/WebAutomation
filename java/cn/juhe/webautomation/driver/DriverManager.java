@@ -77,7 +77,7 @@ public class DriverManager {
 				webDriver = new ChromeDriver(capabilities);
 			} else if (config.isFirefox()) {
 				driverDirectory = FileHandle.getParametersCfg().getProperty("FirefoxDriverDirectory");
-				System.setProperty("webdriver.firefox.bin", driverDirectory);
+				System.setProperty("webdriver.gecko.driver", driverDirectory);
 				capabilities = DesiredCapabilities.firefox();
 				webDriver = new FirefoxDriver(capabilities);
 			}
@@ -86,11 +86,19 @@ public class DriverManager {
 				driverDirectory = FileHandle.getParametersCfg().getProperty("ChromeDriverDirectory");
 				System.setProperty("webdriver.chrome.driver", driverDirectory);
 				capabilities = DesiredCapabilities.chrome();
-				try {
-					webDriver = new RemoteWebDriver(new URL(config.remoteAddress), capabilities);
-				} catch (MalformedURLException e) {
-					e.printStackTrace();
-				}
+			} else if (config.isFirefox()) {
+				driverDirectory = FileHandle.getParametersCfg().getProperty("FirefoxDriverDirectory");
+				System.setProperty("webdriver.gecko.driver", driverDirectory);
+				capabilities = DesiredCapabilities.firefox();
+			} else if (config.isInternetExplore()) {
+				driverDirectory = FileHandle.getParametersCfg().getProperty("IEDriverDirectory");
+				System.setProperty("webdriver.ie.driver", driverDirectory);
+				capabilities = DesiredCapabilities.internetExplorer();
+			}
+			try {
+				webDriver = new RemoteWebDriver(new URL(config.remoteAddress), capabilities);
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
 			}
 		}
 		webDriver.manage().timeouts().pageLoadTimeout(config.pageLoadTimeoutInSeconds, TimeUnit.SECONDS);

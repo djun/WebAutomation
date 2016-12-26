@@ -180,10 +180,19 @@ public class ReportNGHTMLReporterPageTest extends HTMLReporter implements ITestL
 				+ ".png";
 		String diffFilePath = System.getProperty("user.dir") + "/files/results/" + Util.runTitle + "/" + "diff-"
 				+ filename + ".png";
+		File file1 = new File(orgFilePath);
+		File file2 = new File(dataFilePath);
+		File file3 = new File(diffFilePath);
 		try {
-			Reporter.log("<a href=\"" + new File(orgFilePath).getAbsolutePath() + "\">原图片地址</a>");
-			Reporter.log("<a href=\"" + new File(dataFilePath).getAbsolutePath() + "\">现图片地址</a>");
-			Reporter.log("<a href=\"" + new File(diffFilePath).getAbsolutePath() + "\">对比图片地址</a>");
+			if (file1.exists()) {
+				Reporter.log("<a href=\"" + file1.getAbsolutePath() + "\">原图片地址</a>");
+			}
+			if (file2.exists()) {
+				Reporter.log("<a href=\"" + file2.getAbsolutePath() + "\">现图片地址</a>");
+			}
+			if (file3.exists()) {
+				Reporter.log("<a href=\"" + file3.getAbsolutePath() + "\">对比图片地址</a>");
+			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			log.logError(new File(diffFilePath).getName() + "文件不存在");

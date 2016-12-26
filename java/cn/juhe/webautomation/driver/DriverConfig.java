@@ -63,7 +63,7 @@ public class DriverConfig {
 	/**
 	 * IE 浏览器
 	 */
-	private final String INTERNET_EXPLORER = "internet explorer";
+	private final String INTERNET_EXPLORER = "ie";
 
 	/**
 	 * 判断待测的是否是chrome

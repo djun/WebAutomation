@@ -7,7 +7,7 @@ package cn.juhe.webautomation.common;
  *
  */
 public class PageConstant {
-
+	
 	/* 主页-www.juhe.cn */
 	public static final String HOMEPAGE_HEADER = "homepage-header";
 
@@ -31,4 +31,5 @@ public class PageConstant {
 
 	/* API分别页面-www.juhe.cn/docs */
 	public static final String APIDOCPAGE_APICLASSIFY = "apidocpage-api_classify";
+	
 }

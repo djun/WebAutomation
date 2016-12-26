@@ -2,6 +2,7 @@ package cn.juhe.webautomation.testcase;
 
 import java.lang.reflect.Method;
 
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -30,7 +31,7 @@ public class PersonalCenterPageTestCase extends PersonalCenterPage {
 		String orgPwd = testPassword;
 		String newPwd = Util.getRandomPassword(8);
 		log.logInfo("Original Password -->" + orgPwd + "\n" + "New Password -->" + newPwd);
-		System.out.println("Original Password -->" + orgPwd + "\n" + "New Password -->" + newPwd);
+		Reporter.log("Original Password -->" + orgPwd + "\n" + "New Password -->" + newPwd);
 		txtOldPwd.sendKeys(testPassword);
 		txtNewPwd.sendKeys(newPwd);
 		txtConfirmPwd.sendKeys(newPwd);
