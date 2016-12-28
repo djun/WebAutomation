@@ -50,17 +50,20 @@ public class ReportNGHTMLReporterPageTest extends HTMLReporter implements ITestL
 
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void onTestFailure(ITestResult result) {
+
 		// TODO Auto-generated method stub
-		reportLogScreenshot(result);
+		if (result.getTestClass().getRealClass().getSimpleName().endsWith("PageTest")) {
+			reportLogScreenshot(result);
+		} else {
+			saveScreenShot(result);
+		}
 		if (result.getMethod().getRetryAnalyzer() != null) {
 			TestNGRetryAnalyzer testRetryAnalyzer = (TestNGRetryAnalyzer) result.getMethod().getRetryAnalyzer();
 			if (testRetryAnalyzer.getRetryCount() <= testRetryAnalyzer.getMaxRetryCount()) {
@@ -76,7 +79,11 @@ public class ReportNGHTMLReporterPageTest extends HTMLReporter implements ITestL
 
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
-		reportLogScreenshot(result);
+		if (result.getTestClass().getRealClass().getSimpleName().contains("PageTest")) {
+			reportLogScreenshot(result);
+		} else {
+			saveScreenShot(result);
+		}
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

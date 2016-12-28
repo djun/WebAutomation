@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="PageTestSuite">
-	<test verbose="2" name="JuhePageTest" preserve-order="true">
+<suite name="JuheTestSuite">
+	<test name="JuhePageTest" preserve-order="true">
 		<groups>
 			<run>
 				<include name="HomePageTest" />
@@ -11,6 +11,22 @@
 		<classes>
 			<class name="cn.juhe.webautomation.pagetest.HomePageTest" />
 			<class name="cn.juhe.webautomation.pagetest.APIDocPageTest" />
+		</classes>
+	</test>
+
+	<test name="JuheWebTest" preserve-order="true">
+		<classes>
+			<class name="cn.juhe.webautomation.testcase.HomePageTestCase">
+				<methods>
+					<include name="testValidLogin" />
+					<include name="testPersonalCenter" />
+				</methods>
+			</class>
+			<class name="cn.juhe.webautomation.testcase.PersonalCenterPageTestCase">
+				<methods>
+					<include name="testModityPwd" />
+				</methods>
+			</class>
 		</classes>
 	</test>
 	<listeners>
